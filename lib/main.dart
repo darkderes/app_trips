@@ -13,6 +13,7 @@ Future<void> main() async {
   Hive.registerAdapter(PlacesAdapter());
   await Hive.openBox<Places>('Places');
   await loadData();
+
   runApp(const MyApp());
 }
 

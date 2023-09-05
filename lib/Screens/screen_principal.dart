@@ -20,7 +20,7 @@ class Screenprincipal extends StatelessWidget {
             title: const Text('Strips App'),
             bottom: TabBar(
               onTap: (index) => placesProvider.getPlacesList(index),
-              tabs: [
+              tabs: const [
                 Tab(text: 'Chile'),
                 Tab(text: 'Perú'),
                 Tab(text: 'Brasil'),

@@ -19,7 +19,8 @@ class DetailsPlaces extends StatelessWidget {
           Hero(
             tag: places.key ?? 0,
             child: Container(
-              height: 200, // Altura deseada de la imagen
+              height:
+                  200, // Altura deseada de la imagen , no se ocupo cacheimage por un tema academico.
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: NetworkImage(places.urlImage),
@@ -32,7 +33,7 @@ class DetailsPlaces extends StatelessWidget {
                   padding: const EdgeInsets.all(16.0),
                   child: Text(
                     places.nameCountry,
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: Colors.white,
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -46,7 +47,7 @@ class DetailsPlaces extends StatelessWidget {
             padding: const EdgeInsets.all(16.0),
             child: Text(
               places.name,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
@@ -56,7 +57,7 @@ class DetailsPlaces extends StatelessWidget {
             padding: const EdgeInsets.all(16.0),
             child: Text(
               places.description,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 16,
                 height: 2,
               ),
@@ -67,7 +68,7 @@ class DetailsPlaces extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Text(
+                const Text(
                   'Rating: ',
                   style: TextStyle(
                     fontSize: 16,
@@ -81,7 +82,7 @@ class DetailsPlaces extends StatelessWidget {
                   allowHalfRating: true,
                   itemCount: 5,
                   itemSize: 20,
-                  itemBuilder: (context, _) => Icon(
+                  itemBuilder: (context, _) => const Icon(
                     Icons.star,
                     color: Colors.amber, // Color de las estrellas
                   ),

@@ -41,6 +41,7 @@ class PlaceProvider extends ChangeNotifier {
     final placesBox = Hive.box<Places>('Places');
     final placesList =
         placesBox.values.where((place) => place.isFavorite).toList();
+    notifyListeners();
     return placesList;
   }
 
